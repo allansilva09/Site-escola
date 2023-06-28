@@ -1,3 +1,106 @@
-body{
-    background-color: aqua;
+/*retirar borda branca dos sites*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*cabeçalhos*/
+.header {
+    background: #5688C3;
+    display: flex; /*alinhar objetos na mesma linha*/
+    justify-content: space-between; /*deixar os objetos nos cantos*/
+    align-items: center;
+}
+
+/*estilizacao dos textos cabeçalho*/
+.header a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+/* caso o site tenha sido visitado o botão fica claro */
+a:visited {
+    color: #1e1e1e;
+}
+
+h1, h2, p, h3, a {
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+
+/* não deixar imagem ultrapassar o limite da tela*/
+.seção1 img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* deixando o texto acima da imagem + estilizacao*/
+.seção1 h3 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.seção1 {
+    position: relative;
+    display: inline-block;
+}
+
+.seção1 img {
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.texto h3 {
+    font-size: 35px;
+    font-weight: bold; 
+}
+
+/*alinhar as caixas de lado */
+.caixas {
+    display: flex;
+}
+
+/* deixar caixa cobrindo 1/3 do site*/
+.caixa {
+    max-width: 33.33%;
+    margin: 10px;
+}
+
+.caixa h1 {
+    background: #79A9D6;
+    padding: 3px;
+}
+
+
+.caixas2 {
+    display: flex;
+}
+
+.caixa2 img {
+    max-width: 100%;
+}
+
+.caixa2 {
+    margin: 10px;
+}
+
+.caixa2 h1 {
+    background: #79A9D6;
+    padding: 3px;
 }
